@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click to Present</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f8f8f8;
+            cursor: pointer;
+            font-family: Arial, sans-serif;
+        }
+        p {
+            color: #888;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body onclick="openPresentation()">
+    <p>Click anywhere to open the presentation</p>
+
+    <script>
+        function openPresentation() {
+            // เปลี่ยน URL ให้ตรงกับไฟล์ .pptx ของคุณ
+            window.location.href = "main.pptx";
+        }
+    </script>
+</body>
+</html>
